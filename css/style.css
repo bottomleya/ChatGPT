@@ -8,5 +8,6 @@ body{
 
 .sidebar{
   width: 0.5rem;
+  height: 100%;
   background-color: 202123;
 }
