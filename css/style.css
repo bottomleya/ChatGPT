@@ -6,6 +6,7 @@ body{
     text-align:center;
     background-position:0 0;
   background-repeat: no-repeat;
+	overflow-x: hidden;
 }
 
 .sidebar{
