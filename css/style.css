@@ -19,15 +19,33 @@ body{
   left: 0;
 }
 
-.conversation > div {
-  margin: 100px;
-  padding: 100px;
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.left {
+	text-align: right;
+	padding: 50px;
+	width: 40%;
+}
+
+.right {
+	text-align: left;
+	padding: 50px;
+	width: 60%;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row {
+  padding: 50px;
   width: 100%;
   height: auto;
-  display: inline-block;
-  text-align: center;
-	position: relative;
-	z-index: -1;
+  display: flex;
 }
 
 .question{
