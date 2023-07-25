@@ -19,7 +19,7 @@ body{
   left: 0;
 }
 
-.conversation{
+.conversation > div {
   margin: 50;
 }
 
