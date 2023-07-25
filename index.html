@@ -33,6 +33,8 @@
             function typeWrite(id, txt) {
                 var i = 0;
                 var speed = 50;
+
+                console.log(txt.length);
                 
                 function typeWriter() {
                   if (i < txt.length) {
@@ -51,8 +53,8 @@
                 var message = $("#prompt-textarea").val();
                 $('.conversation').append( '<div class=\"row question\"> <div class=\"column left\"><img src=\"images/usericon.PNG\"></div><div class=\"column right\">' + message + '</div></div>' );
                 $('.conversation').append( '<div class=\"row response\"> <div class=\"column left\"><img src=\"images/chatgpticon.PNG\"></div><div id=\"response' + idx + '\"class=\"column right\"></div></div>' );
-                idx++;
                 typeWrite('response' + idx, responses[idx]);
+                idx++;
 
                 
                 
