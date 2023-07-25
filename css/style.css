@@ -17,6 +17,7 @@ body{
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 0;
 }
 
 .column {
@@ -42,10 +43,11 @@ body{
   clear: both;
 }
 .row {
-  padding: 50px;
+  padding: 40px;
   width: 100%;
   height: auto;
   display: flex;
+  z-index: -1;
 }
 
 .question{
