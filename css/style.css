@@ -58,6 +58,7 @@ left: 200px;
   height: auto;
   display: flex;
   z-index: -1;
+  font-weight: 500;
 }
 
 .question{
