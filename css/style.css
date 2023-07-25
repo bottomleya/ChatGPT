@@ -5,3 +5,8 @@ body{
     background-position:0 0;
   background-repeat: no-repeat;
 }
+
+.sidebar{
+  width: 0.5rem;
+  background-color: 202123;
+}
