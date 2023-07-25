@@ -82,7 +82,7 @@ body{
 #prompt-textarea {
     position: absolute;
     left: 10px;
-    right: 10px;
+    right: 60px;
     top: 10px;
     bottom: 10px;
   border-color: rgba(86,88,105,0);
