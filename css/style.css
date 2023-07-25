@@ -23,3 +23,12 @@ body{
     left: 0;
     bottom: 0;
 }
+#prompt-textarea {
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0.1rem;
+    width: 50%;
+    height: 0.1rem;
+}
