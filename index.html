@@ -27,7 +27,10 @@
         </div>
         <span id="footertext">Free Research Preview. ChatGPT may produce inaccurate information about people, places, or facts. <u>ChatGPT July 20 Version</u></span> 
         <script>
-            function submitMessage {
+            function submitMessage() {
+                
+                console.log('message submitted');
+                
                 // create new div
                 var message = $("#prompt-textarea").val();
                 $('.conversation').append( '<div class=\"question\">' + message + '</div>' );
@@ -37,11 +40,12 @@
                 $("#prompt-textarea").val('');
             }
             
-            $("#sendmessage").click(submitMessage());
+            $("#sendmessage").click(submitMessage(); console.log('submit message clicked'););
 
             $("textarea").keyup(function(e) {
                var code = e.keyCode ? e.keyCode : e.which;
                if (code == 13) {
+                    console.log('enter pressed');
                    submitMessage();
                }
             })
