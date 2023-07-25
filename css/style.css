@@ -62,10 +62,15 @@ body{
 }
 
 #sendmessage {
-  
   position: absolute;
-  
-  color: rgba(86,88,105,80);
+  right: 15px;
+  top: 5;
+  color: #DEDEE5;
+}
+
+#sendmessage:hover {
+  cursor: pointer;
+  color: #b2b2b8;
 }
 
 #footertext {
