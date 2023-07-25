@@ -20,12 +20,14 @@ body{
 }
 
 .conversation > div {
-  margin: 100;
-  padding: 100;
+  margin: 100px;
+  padding: 100px;
   width: 100%;
   height: auto;
   display: inline-block;
   text-align: center;
+	position: relative;
+	z-index: -1;
 }
 
 .question{
@@ -37,6 +39,7 @@ body{
 .response{
   background-color: #F7F7F8;
   border-color: #DEDEDF;
+  border-width: 2px;
 }
 
 .sidebar img{
