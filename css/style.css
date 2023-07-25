@@ -20,27 +20,23 @@ body{
 }
 
 .conversation > div {
-  margin: 50;
+  margin: 100;
+  padding: 100;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  text-align: center;
 }
 
 .question{
-  width: 100%;
-  height: auto;
   background-color: #fff;
-  text-align: center;
-  display: block;
-  position: absolute;
-  left: 200px;  
+    border: none;
+    outline: none;
 }
 
 .response{
-  width: 100%;
-  height: auto;
   background-color: #F7F7F8;
-  text-align: center;
-  display: block;
-  position: absolute;
-  left: 200px;  
+  border-color: #DEDEDF;
 }
 
 .sidebar img{
@@ -65,12 +61,12 @@ body{
   position: absolute;
   right: 15px;
   top: 5;
-  color: #DEDEE5;
+  color: #19C37D;
 }
 
 #sendmessage:hover {
   cursor: pointer;
-  color: #b2b2b8;
+  color: #139e65;
 }
 
 #footertext {
