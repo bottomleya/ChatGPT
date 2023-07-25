@@ -33,8 +33,6 @@
             function typeWrite(id, txt) {
                 var i = 0;
                 var speed = 50;
-
-                console.log(txt.length);
                 
                 function typeWriter() {
                   if (i < txt.length) {
@@ -43,7 +41,8 @@
                     i++;
                     setTimeout(typeWriter, speed);
                   }
-                }()
+                }
+                typeWriter();
             }
             
             function submitMessage() {
