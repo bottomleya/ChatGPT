@@ -44,7 +44,8 @@ body{
 	width: 100%;
 	position: absolute;
 	top: 0px;
-	left: 0px;
+	left: 200px;
+	z-index: -1;
 }
 
 /* Clear floats after the columns */
