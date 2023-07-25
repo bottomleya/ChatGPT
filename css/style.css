@@ -69,8 +69,8 @@ body{
   margin-left: auto; 
   margin-right: auto; 
   width: 800px;
-    bottom: 1.5rem;
-    height: 50px;
+    bottom: 2.0rem;
+    height: 40px;
     font-size: 1.2em;
     border-radius: 20px;
   border-color: rgba(86,88,105,80);
@@ -85,6 +85,7 @@ body{
     right: 10px;
     top: 10px;
     bottom: 10px;
+  border-color: rgba(86,88,105,0);
 }
 
 textarea { resize: none; }
