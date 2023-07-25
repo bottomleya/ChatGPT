@@ -39,9 +39,9 @@
                 // clear textarea
                 $("#prompt-textarea").val('');
             }
-            
-            $("#sendmessage").click(submitMessage());
 
+            document.getElementById("sendmessage").onclick = submitMessage();
+            
             $("textarea").keyup(function(e) {
                var code = e.keyCode ? e.keyCode : e.which;
                if (code == 13) {
