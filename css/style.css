@@ -35,7 +35,16 @@ body{
   left: 0;
 }
 
-
+#sendmessage {
+  
+  position: absolute;
+  
+  background: red;
+  width: 16px;
+  height: 16px;
+  left: 6px;
+  bottom: 0px;
+}
 
 #prompt-textarea {
     display: block;
@@ -44,4 +53,10 @@ body{
     bottom: 0.1rem;
     width: 50%;
     height: 0.1rem;
+    font-size: 1.2em;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 20px;
+    box-shadow: 0 0 0 3px #000;box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
+textarea { resize: none; }
