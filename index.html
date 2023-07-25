@@ -27,14 +27,17 @@
         </div>
         <span id="footertext">Free Research Preview. ChatGPT may produce inaccurate information about people, places, or facts. <u>ChatGPT July 20 Version</u></span> 
         <script>
+            var responses = ["This is the first response", "This is the second response", "This is the third response", "This is the fourth response", "Goodbye"];
+            var idx = 0;
             function submitMessage() {
                 
                 console.log('message submitted');
                 
-                // create new div
+                // create new divs
                 var message = $("#prompt-textarea").val();
                 $('.conversation').append( '<div class=\"row question\"> <div class=\"column left\"><img src=\"images/usericon.PNG\"></div><div class=\"column right\">' + message + '</div></div>' );
-                $('.conversation').append( '<div class=\"row response\"> <div class=\"column left\"><img src=\"images/chatgpticon.PNG\"></div><div class=\"column right\">Thank you for submitting your response. Please consider reviewing this tool further.</div></div>' );
+                $('.conversation').append( '<div class=\"row response\"> <div class=\"column left\"><img src=\"images/chatgpticon.PNG\"></div><div class=\"column right\">' + responses[idx] + '</div></div>' );
+                idx++;
                 
                 // clear textarea
                 $("#prompt-textarea").val('');
