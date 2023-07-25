@@ -30,9 +30,8 @@
             function submitMessage() {
                 // create new div
                 var message = $("#prompt-textarea").val();
-                $('.conversation').append( "<div class="question">" + message + "</div>" );
-                $('.conversation').append( "<div class="response">This is a teste response</div>" );
-
+                $('.conversation').append( '<div class=\"question\">' + message + '</div>' );
+                $('.conversation').append( '<div class=\"response\">This is a teste response</div>');
                 
                 // clear textarea
                 $("#prompt-textarea").val('');
