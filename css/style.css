@@ -10,6 +10,7 @@ body{
   width: 200px;
   height: 100%;
   background-color: #202123;
+  text-align: left;
   display: block;
   position: absolute;
   top: 0;
