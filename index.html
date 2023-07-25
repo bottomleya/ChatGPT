@@ -5,9 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>ChatGPT</title>
+        
         <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500" rel="stylesheet">
+        
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        
         <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/fontawesome.min.js"></script>
     </head>
     <body class="">
         <div class="sidebar">
@@ -18,10 +23,11 @@
         </div>
         <div id="prompt-container">
             <textarea id="prompt-textarea" tabindex="0" placeholder="Send a message" class=""></textarea>
+            <i id="sendmessage" class="fa-solid fa-paper-plane"></i>
         </div>
         <span id="footertext">Free Research Preview. ChatGPT may produce inaccurate information about people, places, or facts. <u>ChatGPT July 20 Version</u></span> 
         <script>
-            $("#prompt-textarea").click();
+            $("#sendmessage").click(console.log("creating new div"));
         </script>
     </body>
 </html>
