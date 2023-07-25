@@ -46,6 +46,12 @@ body{
   bottom: 0px;
 }
 
+#footertext {
+    font-size: .75rem;
+    line-height: 1rem;
+  color: rgba(86,88,105,var(--tw-text-opacity));
+}
+
 #prompt-textarea {
     display: block;
     margin-left: auto;
