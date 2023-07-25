@@ -60,6 +60,10 @@
                 
                 // clear textarea
                 $("#prompt-textarea").val('');
+
+
+                // scroll to bottom
+                document.getElementById("conversation").scrollTop = document.getElementById("conversation").scrollHeight;
             }
 
             document.getElementById("sendmessage").onclick = submitMessage;
