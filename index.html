@@ -33,14 +33,14 @@
                 
                 // create new div
                 var message = $("#prompt-textarea").val();
-                $('.conversation').append( '<div class=\"question\">' + message + '</div>' );
-                $('.conversation').append( '<div class=\"response\">This is a teste response</div>');
+                $('.conversation').append( '<div class=\"question\"> <div class=\"col1\"><img src=\"images/usericon.png\"></div><div class=\"col2\">$message </div></div>' );
+                $('.conversation').append( '<div class=\"question\"> <div class=\"col1\"><img src=\"images/chatgpticon.png\"></div><div class=\"col2\">Thank you for submitting your response. Please consider reviewing this tool further. </div></div>' );
                 
                 // clear textarea
                 $("#prompt-textarea").val('');
             }
             
-            $("#sendmessage").click(submitMessage);
+            $("#sendmessage").click(submitMessage());
 
             $("textarea").keyup(function(e) {
                var code = e.keyCode ? e.keyCode : e.which;
