@@ -64,12 +64,13 @@
 
                 // scroll to bottom
                 //document.getElementById("conversation").scrollTop = document.getElementById("conversation").scrollHeight;
-
+                $("#conversation").animate({ scrollTop: document.getElementById("conversation").scrollHeight }, "slow");
+                
                 //const scrollIntoViewOptions = { behavior: "smooth", block: "center" };   
                 //document.getElementById("conversation").scrollIntoView(scrollIntoViewOptions); 
                 //setFocusOnDivWithId(elementId);
 
-                 window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
+                 //window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
             }
 
             document.getElementById("sendmessage").onclick = submitMessage;
