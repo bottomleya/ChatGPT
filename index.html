@@ -71,6 +71,11 @@
                    submitMessage();
                }
             })
+
+            window.setInterval(function() {
+              var elem = document.getElementById('conversation');
+              elem.scrollTop = elem.scrollHeight;
+            }, 1000);
         </script>
     </body>
 </html>
