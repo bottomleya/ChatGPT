@@ -63,7 +63,13 @@
 
 
                 // scroll to bottom
-                document.getElementById("conversation").scrollTop = document.getElementById("conversation").scrollHeight;
+                //document.getElementById("conversation").scrollTop = document.getElementById("conversation").scrollHeight;
+
+                //const scrollIntoViewOptions = { behavior: "smooth", block: "center" };   
+                //document.getElementById("conversation").scrollIntoView(scrollIntoViewOptions); 
+                //setFocusOnDivWithId(elementId);
+
+                 window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
             }
 
             document.getElementById("sendmessage").onclick = submitMessage;
@@ -76,10 +82,6 @@
                }
             })
 
-            window.setInterval(function() {
-              var elem = document.getElementById('conversation');
-              elem.scrollTop = elem.scrollHeight;
-            }, 1000);
         </script>
     </body>
 </html>
