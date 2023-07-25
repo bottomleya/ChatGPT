@@ -85,7 +85,8 @@ body{
     right: 60px;
     top: 10px;
     bottom: 10px;
-  border-color: rgba(86,88,105,0);
+    border: none;
+    outline: none;
 }
 
 textarea { resize: none; }
