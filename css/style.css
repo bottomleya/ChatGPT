@@ -9,7 +9,11 @@ body{
 .sidebar{
   width: 200px;
   height: 100%;
-  background-color: 202123;
+  background-color: #202123;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .sidebar img{
