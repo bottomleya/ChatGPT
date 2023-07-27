@@ -29,13 +29,13 @@ body{
 .left {
 	text-align: right;
 	padding: 50px;
-	width: 30%;
+	width: 20%;
 }
 
 .right {
 	text-align: left;
 	padding: 50px;
-	width: 40%;
+	width: 60%;
 }
 .conversation {
 	overflow-x:hidden; 
@@ -46,6 +46,11 @@ body{
 	top: 0px;
 	left: 200px;
 	z-index: -1;
+}
+
+.conversation-image {
+	max-width: 50%;
+	max-height: 30%;
 }
 
 /* Clear floats after the columns */
