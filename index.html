@@ -27,10 +27,13 @@
         </div>
         <span id="footertext">Free Research Preview. ChatGPT may produce inaccurate information about people, places, or facts. <u>ChatGPT July 20 Version</u></span> 
         <script>
-            var responses = ["Controllers \n<img id='newchat' style='' src='images/hcontroller.png'>", "This is the second response", "This is the third response", "This is the fourth response", "Goodbye"];
+            var responses = [{text:"This is the first reponse",image:""}, 
+                             {text:"This is the second response",image:""}, 
+                             {text:"This is the third response",image:""},
+                             {text:"This is the fourth response", image:"Goodbye"}];
             var idx = 0;
 
-            function typeWrite(id, txt) {
+            function typeWrite(id, txt, image) {
                 var i = 0;
                 var speed = 50;
                 
@@ -41,6 +44,7 @@
                     i++;
                     setTimeout(typeWriter, speed);
                   }
+                    document.getElementById(id).innerHTML += '<img src=\"images/'+image+'"\>'
                 }
                 typeWriter();
             }
@@ -53,7 +57,7 @@
                 var message = $("#prompt-textarea").val();
                 $('.conversation').append( '<div class=\"row question\"> <div class=\"column left\"><img src=\"images/usericon.PNG\"></div><div class=\"column right\">' + message + '</div></div>' );
                 $('.conversation').append( '<div class=\"row response\"> <div class=\"column left\"><img src=\"images/chatgpticon.PNG\"></div><div id=\"response' + idx + '\"class=\"column right\"></div></div>' );
-                typeWrite('response' + idx, responses[idx]);
+                typeWrite('response' + idx, responses[idx].text,responses[idx].image);
                 idx++;
 
                 
